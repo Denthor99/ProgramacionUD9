@@ -1,15 +1,9 @@
 package org.ieslosremedios.daw1.prog.ut9.ejercicios;
-import java.awt.*;
-public class PantallaLogin {
-    public static void main(String[] args) {
-        /**
-         * Enunciado: Queremos recrear en java una ventana de login. Esta ventana debe constar de:
-         * - Nombre
-         * - Password
-         * - Botón Acceder
-         * - Botón Cancelar
-         * */
 
+import java.awt.*;
+
+public class LoginFrame extends Frame {
+    public LoginFrame() {
         // Creamos el Frame
         Frame logineo=new Frame("Creedenciales de Acceso");
         // Crearemos un fondo, para que no queda tan soso
@@ -60,6 +54,9 @@ public class PantallaLogin {
         acceso.setVisible(true);
         acceso.setBackground(Color.LIGHT_GRAY);
         acceso.setBounds(180,365,125,35);
+    }
 
+    public static void main(String[] args) {
+        LoginFrame ejemplo1=new LoginFrame();
     }
 }
