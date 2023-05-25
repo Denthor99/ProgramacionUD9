@@ -45,7 +45,13 @@ public class Ejercicio2 extends Frame {
                 Frame f=new Frame();
                 f.setTitle("Buenas que tal?");
                 f.setBounds(100,120,300,200);
+                f.setLayout(null);
                 f.setVisible(true);
+                Label saludo=new Label("Bienvenido a la " +
+                        "DeepWeb");
+                saludo.setVisible(true);
+                saludo.setBounds(80,50,150,85);
+                f.add(saludo);
                 f.addWindowListener(new WindowListener() {
                     @Override
                     public void windowOpened(WindowEvent e) {
